@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK GALLERY</title>
+ <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between bg bg-dark " id="navbarExample01">
+              <ul class="navbar-nav justify-content-center mb-2 mb-lg-0 ">
+                <li class="nav-item active">
+                 <img class="container mt-2" src="https://th.bing.com/th/id/OIP.6C7EAHSUiR6sVCrEZLnsMAHaFk?w=240&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" style="border-radius: 50%;" alt="" height="75px" width="75px">
+                 <br>
+                 <p class="container" style="color: azure;">The Book Gallery</p>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item active">
+                  <a class="nav-link pt-5 ps-5" style="color: azure;" aria-current="page" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    H&nbsp;o&nbsp;m&nbsp;e</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link pt-5" style="color: azure;"href="#">G&nbsp;a&nbsp;l&nbsp;l&nbsp;e&nbsp;r&nbsp;y&nbsp;&nbsp;&nbsp;B&nbsp;o&nbsp;o&nbsp;k&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link pt-5" style="color: azure;" href="#">C&nbsp;o&nbsp;n&nbsp;t&nbsp;a&nbsp;c&nbsp;t&nbsp;&nbsp;&nbsp; U&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                  <a class="nav-link pt-5" style="color: azure;" href="#">A&nbsp;b&nbsp;o&nbsp;u&nbsp;t&nbsp;&nbsp;&nbsp; u&nbsp;s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar -->
+      
+        <!-- Background image -->
+        <div
+          class="p-5 text-center bg-image"
+          style="
+            background-image: url('https://trumpwallpapers.com/wp-content/uploads/Book-Wallpaper-02-2560-x-1600.jpg');
+            height: 1200px;
+          "
+        >
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3" id="aa">There is no loyal friend as a book</h1>
+                <h4 class="mb-3 justify-content-end" id="ab">-Ernest Hemingway</h4>
+                <hr>
+                
+<h1 id="aa"> <u>Jouners of Books</u> </h1>
+<br>
+
+               <table>
+                <tr  class="container d-flex justify-content-between">
+                    <td >
+                      <div class="pe-5" id="hh">
+                      <a href="#ac">  <img src="https://th.bing.com/th/id/OIP.TiemwkyZ7Xt4EM9aOe4CuwHaKj?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"  alt="" style="border-radius: 50%;" width="100px"    ></a>
+                    <br>
+                    <b>Action Adventure</b>
+                  </div>
+                    </td>
+
+                    <td>
+                      <div class="ps-5 pe-5" id="hh" >
+<a href="#ad"><img src="https://th.bing.com/th/id/OIP.NGofr7d8y6lcAUn2SeXXPgHaLZ?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""  style="border-radius: 50%;" width="100px"></a>
+<br>
+<b>Classics</b>
+</div>
+                    </td>
+             <td>
+              <div class="ps-5 pe-5" id="hh">
+             <a href="#ae"><img src="https://th.bing.com/th/id/OIP._ChojpcvSyagZ9_xPQig1AHaLY?w=192&h=295&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px" ></a>
+              <br>
+              <b>Comic Book</b>
+            </div>
+             </td>
+<td>
+  <div class="ps-5 pe-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.MvTt1eysegqhuqxsFx9yWgHaLd?w=192&h=296&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+     <br>
+     <b> Mistery</b>
+    </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.JnOziYbMThbOrhR567AZ8wHaLK?w=192&h=290&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+<br>
+<b>Fantasy</b>
+</div>
+</td>
+
+<td>
+  <div class="ps-5 " id="hh">
+  <img src="https://th.bing.com/th/id/OIP.JRX_nctJoHShGScO6WEmDgHaKm?w=116&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""  style="border-radius: 50%;" width="100px">
+<br>
+<b>Historical Fiction</b>
+</div>
+</td>
+                </tr>
+
+                <tr  class="container d-flex justify-content-between">
+                  <td>
+                    <div class=" pe-5 pt-5 pb-5" id="hh">
+                    <img src="https://th.bing.com/th/id/OIP.DyaZtG-6xd1qh1K-CSYG6wHaL4?w=192&h=308&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+                  <br>
+                  <b>Horror</b>
+                </div>
+                  </td>
+
+<td>
+  <div class="pe-5 pb-5 ps-5 pt-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.I0E4NsKS2GFY6CSevT-ZPQHaLp?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+    <br>
+    <b>Literary Fiction</b>
+  </div>
+</td>
+
+<td>
+  <div class="pe-5 pb-5 ps-5 pt-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.YpdzRhpQ95gfV30P8BuYnQHaLu?w=192&h=304&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+    <br>
+    <b>Romance</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 pb-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.0fhzDg-3-dYhdHZwPTjOxgHaLl?w=128&h=200&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+    <br>
+    <b>Science Fiction</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 pb-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.YNEej5gG75-_f2yajFTOwwHaLq?w=192&h=302&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+  <br>
+  <b>Short Stories</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pt-5 pb-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.FbFjCxuh2eBy4klql9hbXQHaJn?w=121&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+ <br>
+ <b>Suspense and Thrillers</b>
+  </div>
+</td>
+
+                </tr>
+
+                <tr class="container d-flex justify-content-between">
+<td>
+<div class="pb-5 pe-5 pt-5" id="hh">
+  <img src="https://th.bing.com/th/id/OIP.NXONlD_zULXO3jU-bosWrgHaL6?w=192&h=309&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+<br>
+<b>Women's Fiction</b>
+</div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 ps-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.i5CIAVWV2abfRv0YDIXocwHaLY?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" style="border-radius: 50%;" width="100px">
+ <br>
+ <b>Biographies</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 pb-5" id="hh">
+    <img src="https://th.bing.com/th/id/OIP.DEhejl27lyOJoklWwVn38QAAAA?w=142&h=183&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""style="border-radius: 50%;" width="100px">
+    <br>
+    <b>Cookbooks</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 pb-5" id="hh">
+    <a href="#ax"><img src="https://th.bing.com/th/id/OIP.PngM_g-QhXy-Ontd7_iceAHaLc?w=192&h=296&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""style="border-radius: 50%;" width="100px"></a>
+    <br>
+    <b>Essays</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pe-5 pt-5 pb-5" id="hh">
+   <a href="#ay"> <img src="https://th.bing.com/th/id/OIP.OlfI3r5kCYRQcY6srL-uDwHaK9?w=192&h=285&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""style="border-radius: 50%;" width="100px"></a>
+    <br>
+    <b>History</b>
+  </div>
+</td>
+
+<td>
+  <div class="ps-5 pt-5 pb-5" id="hh">
+   <a href="#az"> <img src="https://th.bing.com/th/id/OIP.lFNeEgO03-Wb8TysdHKe3gHaLX?w=192&h=295&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt=""style="border-radius: 50%;" width="100px"></a>
+    <br>
+    <b>Memoir</b>
+  </div>
+</td>
+
+                </tr>
+               </table>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+      </header>
+
+      <hr>
+      <div class="" >
+      <h1 id="ac"><b> <center> Action and Adventure</center></b></h1>
+
+    </div>
+
+    <div>
+      <table>
+        <tr class="container d-flex justify-content-between">
+          <td class="ps-3 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.OmbrZoGEYE8GF6itsjX57AHaK9?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> 438 days <br> (by jonathan Franklin)</mark> </center></b>
+          </td>
+
+          <td class="ps-5 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.TiemwkyZ7Xt4EM9aOe4CuwHaKj?w=126&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> The Life of pi</mark> </center></b>
+          </td>
+
+
+          <td class="ps-5 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.QUCCnzcNrQIMcP9dTgZr6QHaLg?w=119&h=186&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> The Time Machine <br> (by H.G Wells)</mark> </center></b>
+          </td>
+          <td class="ps-5  pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.mbKNhw2knDSTyFjnfurs4QHaK-?w=192&h=285&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark>The treasure island <br>( by Robert Louise)</mark> </center></b>
+          </td>
+
+          <td class="ps-5  pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.7E19RcjUa_rOnBLv5dwcGQHaLH?w=192&h=288&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark>Revelations <br>( by Paul C Middleton)</mark> </center></b>
+          </td>
+
+        </tr>
+
+
+      </table>
+    </div>
+
+
+
+
+
+    <hr>
+    <div class="" >
+    <h1 id="ad"><b> <center> Classics</center></b></h1>
+
+  </div>
+
+  <div>
+    <table>
+      <tr class="container d-flex justify-content-between">
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://cdn2.penguin.com.au/covers/original/9781784752637.jpg" alt="" height="300px">
+        <br>
+        <b><center>  <mark> To Kill a MOcking Bird<br> (by Harper Lee)</mark> </center></b>
+        </td>
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.CCx-z4Y6yopnYf_HWW1sYwHaLi?w=192&h=299&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> Little Women <br> (by Louisa may)</mark> </center></b>
+        </td>
+
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.l7auznczjIIEyRqElGA7oQAAAA?w=192&h=294&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> Vintage Beloved <br> (by Toni Morrison)</mark> </center></b>
+        </td>
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.l7auznczjIIEyRqElGA7oQAAAA?w=192&h=294&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> Vintage Beloved <br> (by Toni Morrison)</mark> </center></b>
+        </td>
+
+
+      </tr>
+
+
+
+
+
+    </table>
+  </div>
+
+
+  <hr>
+      <div class="" >
+      <h1 id="ae"><b> <center> Comic Book or Graphic Novel</center></b></h1>
+
+    </div>
+
+    <div>
+      <table>
+        <tr class="container d-flex justify-content-between">
+          <td class="ps-3 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.-pwsZDKnzYwhL-vJL4TsCADGEs?w=192&h=290&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> Watchmen <br> (by Aleen Moore)</mark> </center></b>
+          </td>
+
+          <td class="ps-5 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.8hl8R48c0wiCfFYWvDj7cwHaLY?w=192&h=296&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> The walking dead <br> (by Robert kirkman)</mark> </center></b>
+          </td>
+
+
+          <td class="ps-5 pe-5 pb-5 pt-5">
+            <img src="https://th.bing.com/th/id/OIP.eqZVFvgzVgfyknRHHpMSagHaJ4?w=161&h=215&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+          <br>
+          <b><center>  <mark> The boy,the mole,the fox <br> and the horse <br> (by Charlie Mackery)</mark> </center></b>
+          </td>
+        
+        </tr>
+      </table>
+    </div>
+
+
+
+    <hr>
+    <div class="" >
+    <h1 id="ae"><b> <center> Detective and Mystery</center></b></h1>
+
+  </div>
+
+  <div>
+    <table>
+      <tr class="container d-flex justify-content-between">
+        <td class="ps-3 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.HeSfbOHC2Xn8Sxy1k1aWagHaLV?w=118&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> The Night Fire <br> (by Michael Connelly)</mark> </center></b>
+        </td>
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.MvTt1eysegqhuqxsFx9yWgHaLd?w=192&h=296&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> The adventures of <br>Sherlock holmes <br> (by Aurthur conan Doyle)</mark> </center></b>
+        </td>
+
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.mGr5b7u6RqO388R4ss7BAAHaLG?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> And then there were <br> none <br> (by agatha christie)</mark> </center></b>
+        </td>
+      
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+    <div class="" >
+    <h1 id="ae"><b> <center>Fantasy</center></b></h1>
+
+  </div>
+
+  <div>
+    <table>
+      <tr class="container d-flex justify-content-between">
+        <td class="ps-3 pe-5 pb-5 pt-5">
+          <img src="https://assets.fontsinuse.com/static/use-media-items/84/83443/upto-700xauto/5c642743/13COATES-ITEM1-superJumbo.jpeg?resolution=0" alt="" height="300px">
+        <br>
+        <b><center>  <mark> The Water dancer <br> (by Ta Nehisi Coates)</mark> </center></b>
+        </td>
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.cTuwVP7yi29Kin0q6J3ULAHaLL?w=192&h=290&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+        <br>
+        <b><center>  <mark> Circe  <br> (by Madeline Miller)</mark> </center></b>
+        </td>
+
+
+        <td class="ps-5 pe-5 pb-5 pt-5">
+          <img src="https://th.bing.com/th/id/OIP.zW3GpmxrD_wZqX22tILq-QHaLQ?pid=ImgDet&rs=1" alt="" height="300px">
+        <br>
+        <b><center>  <mark> Ninth House<br> (by Leigh Bardugo)</mark> </center></b>
+        </td>
+      
+      </tr>
+    </table>
+  </div>
+
+
+  <hr>
+  <div class="" >
+  <h1 id="ae"><b> <center>Historical Fiction</center></b></h1>
+
+</div>
+
+<div>
+  <table>
+    <tr class="container d-flex justify-content-between">
+      <td class="ps-3 pe-5 pb-5 pt-5">
+        <img src="https://th.bing.com/th/id/OIP.Qp0XkaqJEw6Qrfh_5r1dVwHaLN?w=192&h=290&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+      <br>
+      <b><center>  <mark> The Help <br> (by Kathryn Stockett)</mark> </center></b>
+      </td>
+
+      <td class="ps-5 pe-5 pb-5 pt-5">
+        <img src="https://th.bing.com/th/id/OIP.TaxDy997JFc65YZBBDAvcAHaLW?w=192&h=295&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+      <br>
+      <b><center>  <mark> One Hundred Years <br> of Solitude <br> (by Gabriel garcia)</mark> </center></b>
+      </td>
+
+
+      <td class="ps-5 pe-5 pb-5 pt-5">
+        <img src="https://th.bing.com/th/id/OIP.YOk-DF49R6dNDUqxPt1m6wHaJ4?w=121&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+      <br>
+      <b><center>  <mark> Memoirs of a geisha <br> (by Arthur golden)</mark> </center></b>
+      </td>
+    
+    </tr>
+  </table>
+</div>
+
+
+
+<hr>
+<div class="" >
+<h1 id="ae"><b> <center>Horror</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.qg2Hi9D9UWNTQbxPMXQuhAHaMb?w=192&h=323&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Carrie <br> (by Stephen King)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.wf3n1oHlxoUs3qcJ6ZCAHgHaMS?w=192&h=318&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> The Haunting of Hill <br> house <br> (by Shirley Jackson)</mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.YOk-DF49R6dNDUqxPt1m6wHaJ4?w=121&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Bird Box <br> (by Josh Malerman)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+
+
+<hr>
+<div class="" >
+<h1 id="ae"><b> <center>Biographies and Autobiographies</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.6ofWXYomowOGazyjZ0lJnQHaIr?w=121&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Playing it my way <br> (by Sachin tendulkar)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.i5CIAVWV2abfRv0YDIXocwHaLY?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Me (by Elton John)</mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.SIamlW1s-GT1vNMKDyypMQHaMP?w=192&h=318&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> I know why the caged <br> bird sings <br> (by maya angelou)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+
+
+<hr>
+<div class="" >
+<h1 id="ae"><b> <center>Cookbooks</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.DEhejl27lyOJoklWwVn38QAAAA?w=139&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Cravings: hungry for <br>more <br> (by Chrissy Teigen)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.1K-azrt5TY9R8LmJsGOjTgHaJI?w=143&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> The jemima code <br> (by Toni tipton) </mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.jnorWyRVdldoZyHtMsCy9QHaL8?pid=ImgDet&rs=1" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Mastering the art of <br> french cooking  <br> (by louisette bertholle)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+
+
+<hr>
+<div class="" >
+<h1 id="ax"><b> <center>Essays</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.PngM_g-QhXy-Ontd7_iceAHaLc?w=192&h=296&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark>Notes of a native <br>son <br> (by James Bladwin)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.eUyTYabvZDyb5RRB92fSvAHaLK?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Bad Feminist <br> (by Roxane Gay) </mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.HbnWPA2EX50LQX4GoP2KhAHaLC?w=192&h=287&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> The source of self <br>regard <br> (by Toni Morrison)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+
+
+<hr>
+<div class="" >
+<h1 id="ay"><b> <center>History</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.vhvzFUGTg3MR33oDiRAJgAHaLH?w=192&h=288&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark>John Adams <br> (by David Mccullough)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.E0BKDypX5dUAwCgohhhzigHaLO?w=192&h=292&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> 1776 <br> (by David Mccullogh) </mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.M20jBgx7LFG9xtzBXqkn2wHaLR?w=183&h=280&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> The 6 wives of Henry VIII<br> (by Alison Weir)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+    
+
+
+<hr>
+<div class="" >
+<h1 id="az"><b> <center>Memoir</center></b></h1>
+
+</div>
+
+<div>
+<table>
+  <tr class="container d-flex justify-content-between">
+    <td class="ps-3 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.lFNeEgO03-Wb8TysdHKe3gHaLX?w=192&h=295&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark>Born a Crime <br> (by Trevor Noah)</mark> </center></b>
+    </td>
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.oyXHVqD0_pum9hJ9GLGxrwHaLQ?w=115&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> Becoming <br> (by Michelle Obama) </mark> </center></b>
+    </td>
+
+
+    <td class="ps-5 pe-5 pb-5 pt-5">
+      <img src="https://th.bing.com/th/id/OIP.mKABqJxoxDpAxwhjXtUuQwHaLH?w=117&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7" alt="" height="300px">
+    <br>
+    <b><center>  <mark> The Glass Castle<br> (by Jannette Walls)</mark> </center></b>
+    </td>
+  
+  </tr>
+</table>
+</div>
+
+
+<!-- footer ividun -->
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-secondary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body
+{
+    background-color: darkgrey;
+    background-image: url('https://th.bing.com/th/id/OIP.4Jrukz-V9JHFMmUu4040tgHaEM?w=262&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7');
+}
+a{
+    text-decoration: none;
+
+}
+
+h2{
+ 
+    color: azure; 
+    background-color: rgb(43, 80, 148);
+}
+p{
+    font-size: medium;
+}
+.txt{
+    margin-bottom: 70%;
+
+  }
+  h2{
+    position: sticky;
+    top: 10px;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#aa
+{
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+}
+#ab
+{
+
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+}
+
+#ac
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+#ad
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+
+#ae
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+
+#ax
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+
+#ay
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+
+#az
+{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive; 
+    justify-content: end; 
+    background-color: coral;   
+}
+
+
+#hh :hover
+{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* gdyr */
+
+
